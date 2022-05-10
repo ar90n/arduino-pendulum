@@ -64,22 +64,22 @@ public:
       break;
       case 'r':
       {
-        target += 0.1;
+        target += 0.01;
       }
       break;
       case 'f':
       {
-        target -= 0.1;
+        target -= 0.01;
       }
       break;
       case 't':
       {
-        gain += 0.1;
+        gain += 0.01;
       }
       break;
       case 'g':
       {
-        gain -= 0.1;
+        gain -= 0.01;
       }
       break;
       case 'y':
@@ -150,7 +150,7 @@ public:
 };
 
 Duration duration;
-ConfigurableParams params(2.00, 17.00, 0.25, 0.49, 0.70, 40, false);
+ConfigurableParams params(2.00, 17.00, 0.25, 0.5, 0.70, 40, false);
 
 void setup()
 {
