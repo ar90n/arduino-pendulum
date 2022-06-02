@@ -34,7 +34,7 @@ In this project, this feature is achieved by calibrate method of IMU.
 
 
 ## See Also
-* [mpu6060](https://github.com/ElectronicCats/mpu6050)
+* [mpu6050](https://github.com/ElectronicCats/mpu6050)
 
 ## License
 [Apache-2.0](https://github.com/ar90n/arduino-pendulum/blob/main/LICENSE)
