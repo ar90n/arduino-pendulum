@@ -150,7 +150,7 @@ public:
 };
 
 Duration duration;
-ConfigurableParams params(2.00, 17.00, 0.25, 0.5, 0.70, 40, false);
+ConfigurableParams params(2.50, 18.00, 0.21, 0.51, 0.60, 35, false);
 
 void setup()
 {

@@ -34,13 +34,13 @@ public:
   {
     pinMode(FORWARD_PIN, INPUT);
     pinMode(BACKWARD_PIN, OUTPUT);
-    digitalWrite(BACKWARD_PIN, LOW);
+    digitalWrite(BACKWARD_PIN, HIGH);
   }
 
   void backward()
   {
     pinMode(FORWARD_PIN, OUTPUT);
-    digitalWrite(FORWARD_PIN, LOW);
+    digitalWrite(FORWARD_PIN, HIGH);
     pinMode(BACKWARD_PIN, INPUT);
   }
 
@@ -66,7 +66,7 @@ public:
       this->stop();
     }
 
-    const uint8_t pwd_reg_value = abs(sat_intensity) * (255 - offset) + offset;
+    const uint8_t pwd_reg_value = 255 - (abs(sat_intensity) * (255 - offset) + offset);
     analogWrite(PWM_PIN, pwd_reg_value);
   }
 };
